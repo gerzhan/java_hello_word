@@ -16,7 +16,7 @@ $java HelloWordApplication
 
 ## Work with documentation
 
-### Instal dependency
+### Install dependency
 
 - install [docsify](https://docsify.js.org/)
 
