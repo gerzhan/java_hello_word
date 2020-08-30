@@ -1,14 +1,31 @@
 # java_hello_word
-Hello Word Java Application
 
-## Compile
+## Work with application
+
+### Compile application
 
 ```bash
 $javac HelloWordApplication.java
 ```
 
-## Run 
+### Run application
 
 ```bash
 $java HelloWordApplication
+```
+
+## Work with documentation
+
+### Instal dependency
+
+- install [docsify](https://docsify.js.org/)
+
+```bash
+$npm i -g docsify-cli
+```
+
+### Run documentation
+
+```bash
+$docsify serve docs
 ```
