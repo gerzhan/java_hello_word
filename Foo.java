@@ -5,13 +5,7 @@ class Foo {
 
   public String display() {
     return (
-      this.getClass().getName() +
-      ": id=" +
-      this.id +
-      ", name=" +
-      this.name +
-      ", pp=" +
-      this.pp
+      this.getClass().getName() + ": id=" + id + ", name=" + name + ", pp=" + pp
     );
   }
 }
