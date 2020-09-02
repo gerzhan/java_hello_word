@@ -12,3 +12,5 @@ $javac HelloWordApplication.java
 ```bash
 $java HelloWordApplication
 ```
+
+> NOTE: for Windows You can use `make.bat`
