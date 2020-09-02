@@ -1,27 +1,7 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-class Foo {
-  int id;
-  String pp;
-  String name;
-
-  public String display() {
-    return (
-      this.getClass().getName() +
-      ": id=" +
-      this.id +
-      ", name=" +
-      this.name +
-      ", pp=" +
-      this.pp
-    );
-  }
-}
 
 // NOTE: public перед классом требовалось указывать в ранних версиях Java
 class HelloWordApplication {
@@ -54,12 +34,18 @@ class HelloWordApplication {
     item3.name = "three";
     list.add(item3);
     Map map3 = new HashMap<String, Foo>();
-    map1.put(item3.name, item3);
+    map3.put(item3.name, item3);
     bar.add(map3);
     System.out.println("--- step 1 print foo");
     for (int i = 0; i < list.size(); i++) {
       System.out.println(list.get(i).display());
     }
-    System.out.println(" --- step 2 pring bar");
+    System.out.println(" --- step 2 print bar");
+    for (int i = 0; i < bar.size(); i++) {
+      Map<String, Foo> barMap = bar.get(i);
+      barMap.forEach(
+        (k, foo) -> System.out.println(("Item: [" + k + foo.display() + "]"))
+      );
+    }
   }
 }
